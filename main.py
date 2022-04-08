@@ -80,7 +80,7 @@ def newsparser():
     return news
 
 
-@app.get('/news')
+@app.get('/news',status_code=200)
 def get_posts():
     f = open('news.json')
     data = json.load(f)
