@@ -59,7 +59,7 @@ def prob(temp):
         dig = float(inp[i])
         
         sub = sub + (co * dig)
-    total = math.e**(11.5 - (sub*2))
+    total = math.e**(11.5 - (sub))
     return round(((total/(1-total))*1000),0)
     
 
