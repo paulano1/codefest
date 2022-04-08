@@ -79,6 +79,9 @@ def newsparser():
         news[i] = ind
     return news
 
+@app.get("/")
+def hello():
+    return {"message":"its running"}
 
 @app.get('/news',status_code=200)
 def get_posts():
